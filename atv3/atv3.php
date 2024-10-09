@@ -8,16 +8,18 @@
 <body>
     <?php
     $datetime = new DateTime("now", new DateTimeZone("America/Sao_Paulo"));
-    $hora = $datetime->format(H);
+    $hora = $datetime->format(format: 'H');
 
     if (0 <= $hora <= 12):
         echo "Bom dia!";
-        echo "<img src='' alt='imagem: bom dia!'>";
+        echo "<img src='https://i.pinimg.com/564x/e6/50/9a/e6509af6c70a95cfbe06d7628380b181.jpg' alt='imagem: bom dia!'>";
     elseif (12< $hora <18):
         echo "Boa tarde!";
-        echo "<img src='' alt='imagem: boa tarde!'>";
-    else:
-        echo
+        echo "<img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZeJ3DPIVG0m-IVyc0NSU_NhcPFAs_ceal1w&s' alt='imagem: boa tarde!'>";
+    elseif (18<= $hora <=24):
+        echo "Boa noite!";
+        echo "<img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXeoBYwRGJyp-w1Ys22zkJZ2OAc_9L9OH4nw&s' alt='imagem: boa noite!'>";
+    endif;
     ?>
 </body>
 </html>
