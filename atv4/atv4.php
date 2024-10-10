@@ -16,7 +16,7 @@
     </style>
 </head>
 <body>
-    <h2>relatório de clientes</h2>
+    <h1>relatório de clientes</h1>
     <?php
     $pessoa1 = array("codigo" => 1, "nome" => "amanda");
     $pessoa2 = array("codigo" => 2, "nome" => "beatriz");
@@ -38,8 +38,8 @@
         </tr>
         <?php foreach($listapessoas as $itempessoa => $valuepessoa) { ?>
         <tr>
-            <?php foreach($valuepessoa as $item -> value){
-                echo "<td> $value <td>";
+            <?php foreach($valuepessoa as $item => $value){
+                echo "<td> $value </td>";
             } ?>
         </tr>
         <?php } ?>
